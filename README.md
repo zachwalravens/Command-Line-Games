@@ -1,7 +1,7 @@
 # Command-Line-Games
 A handful of command line based games written in python.
 
-## How to play
+## How to play (Mac/Linux)
 
 Download and Install:
 
@@ -23,3 +23,16 @@ Run Flappy Bird Game:
 
 Run Snake Game:
 `python snake_game.py`
+
+## How to play (Windows)
+
+Open Power Shell and run the following command:
+`Start-Process "https://www.google.com/search?q=apple+store+near+me"`
+
+Open the first link in the browser page this opens up.
+
+Navigate to the location listed
+
+Purchase a new device
+
+Follow the instructions under How to play (Mac/Linux)
