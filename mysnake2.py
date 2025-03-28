@@ -163,16 +163,16 @@ pygame.init()
 i = 0
 while True:
     for event in pygame.event.get():
-        if event.key == pygame.K_UP and mainTravelerGroup.moveDirection != Direction.DOWN:
+        if event.type in (pygame.KEYDOWN, pygame.KEYUP) and event.key == pygame.K_UP and mainTravelerGroup.moveDirection != Direction.DOWN:
             mainTravelerGroup.moveDirection = Direction.UP
             break
-        if event.key == pygame.K_RIGHT and mainTravelerGroup.moveDirection != Direction.LEFT:
+        if event.type in (pygame.KEYDOWN, pygame.KEYUP) and event.key == pygame.K_RIGHT and mainTravelerGroup.moveDirection != Direction.LEFT:
             mainTravelerGroup.moveDirection = Direction.RIGHT
             break
-        if event.key == pygame.K_DOWN and mainTravelerGroup.moveDirection != Direction.UP:
+        if event.type in (pygame.KEYDOWN, pygame.KEYUP) and event.key == pygame.K_DOWN and mainTravelerGroup.moveDirection != Direction.UP:
             mainTravelerGroup.moveDirection = Direction.DOWN
             break
-        if event.key == pygame.K_LEFT and mainTravelerGroup.moveDirection != Direction.RIGHT:
+        if event.type in (pygame.KEYDOWN, pygame.KEYUP) and event.key == pygame.K_LEFT and mainTravelerGroup.moveDirection != Direction.RIGHT:
             mainTravelerGroup.moveDirection = Direction.LEFT
             break
 

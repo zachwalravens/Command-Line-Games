@@ -110,7 +110,7 @@ score = 0
 i = 0
 while True:
     for event in pygame.event.get():
-        if event.key == pygame.K_UP:
+        if event.type in (pygame.KEYDOWN, pygame.KEYUP) and event.key == pygame.K_UP:
             thisParticle.yVelocity = -1.0
 
 

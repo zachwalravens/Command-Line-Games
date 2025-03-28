@@ -331,14 +331,14 @@ while True:
 
 
     if i % (5000/(50 + thisPlayer.score)) == 0:
-        attackerArray.append(Attacker(random.randint(0, width), random.randint(0, height/2), "O", thisPlayer, array))
+        attackerArray.append(Attacker(random.randint(0, width), random.randint(0, int(height/2)), "O", thisPlayer, array))
         if thisPlayer.shotsLeft == 0:
             thisPlayer.giveShots(1)
 
     if (i + 1) % random.randint(1, 3000) == 0:
         centerX = random.randint(10, width - 10)
-        centerY = random.randint(10, height/2 - 10)
-        for x in xrange(random.randint(4, 12)):
+        centerY = random.randint(10, int(height/2) - 10)
+        for x in range(random.randint(4, 12)):
             attackerArray.append(Attacker(random.randint(centerX-10, centerX+10), random.randint(centerY-10, centerY+10), "O", thisPlayer, array))
 
     for each in attackerArray:
