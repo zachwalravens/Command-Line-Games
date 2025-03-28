@@ -13,7 +13,7 @@ python3 -m venv games_venv
 source games_venv/bin/activate
 pip install -r requirements.txt
 ```
-w
+
 Run Shooter Game:
 `python shooter_game.py`
 Note: this one takes like 30 seconds to 
@@ -26,13 +26,13 @@ Run Snake Game:
 
 ## How to play (Windows)
 
-Open Power Shell and run the following command:
+1. Open Power Shell and run the following command:
 `Start-Process "https://www.google.com/search?q=apple+store+near+me"`
 
-Open the first link in the browser page this opens up.
+2. Open the first link in the browser page this opens up.
 
-Navigate to the location listed
+3. Navigate to the location listed
 
-Purchase a new device
+4. Purchase a new device
 
-Follow the instructions under How to play (Mac/Linux)
+5. Follow the instructions under How to play (Mac/Linux)
