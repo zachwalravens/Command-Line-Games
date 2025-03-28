@@ -279,9 +279,9 @@ while True:
                 if event.key==pygame.K_UP:
                     thisPlayer.dy = -1
                 if event.key==pygame.K_LEFT:
-                    thisPlayer.dx = -1
+                    thisPlayer.dx = -2
                 if event.key==pygame.K_RIGHT:
-                    thisPlayer.dx = 1
+                    thisPlayer.dx = 2
                 if event.key==pygame.K_DOWN:
                     thisPlayer.dy = 1
             elif thisMovement==MovementType.SINGLE:
@@ -361,6 +361,6 @@ while True:
     print(conCarArrayVert(array))
     print("Score: " + str(thisPlayer.score))
     print("Attacker Horizontal Speed: " + str(currentAttackerHorizontalSpeed) + " Attacker Vertical Speed: " + str(currentAttackerVerticalSpeed) + " Invincibility: " + str(thisPlayer.invincible))
-    time.sleep(0.03)
+    time.sleep(0.1)
 
     i += 1
